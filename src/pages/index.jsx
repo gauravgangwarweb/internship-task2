@@ -40,7 +40,7 @@ export default function Home() {
               {data && (
                 <ul className="flex flex-col h-[480px] gap-4 px-2 overflow-y-scroll" id="scroll">
                   {data.map(item => (
-                    <Card data={item} />
+                    <Card key={item.id} data={item} />
                   ))}
                 </ul>
               )}
